@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="home1RowModel" type="com.application.app.modules.home.data.model.Home1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearPeopleList1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:orientation="vertical">
+        <View
+            android:background="@drawable/rectangle_bg_gray_400_radius_40"
+            android:id="@+id/viewThumbnail"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_80pxh" android:layout_width="@dimen/_80pxh"/>
+        <TextView android:gravity="center"
+            android:id="@+id/txtLoremIpsumIs"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_2pxh"
+            android:layout_marginStart="@dimen/_1pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="match_parent"
+            android:text="@{home1RowModel.txtLoremIpsumIs}"
+            style="@style/txtPoppinsregular12" tools:text="@string/msg_lorem_ipsum_dol"/>
+    </LinearLayout>
+</layout>

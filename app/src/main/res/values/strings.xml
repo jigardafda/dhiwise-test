@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">application1</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="lbl_science">Science</string>
+<string name="msg_see_all_people">SEE ALL PEOPLE YOU FOLLOW</string>
+<string name="lbl_search_topics">Search Topics</string>
+<string name="msg_more_people_to">MORE PEOPLE TO FOLLOW</string>
+<string name="lbl_next">Next</string>
+<string name="lbl_books">Books</string>
+<string name="lbl_stats">Stats</string>
+<string name="lbl_home">Home</string>
+<string name="msg_duis_aute_irure">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</string>
+<string name="lbl_cryptocurrency">Cryptocurrency</string>
+<string name="lbl_fiction">Fiction</string>
+<string name="msg_lorem_ipsum_dol9">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+<string name="lbl_topics">Topics</string>
+<string name="msg_lorem_ipsum_dol8">Lorem ipsum dolor sit amet, consectetur adipiscing elit</string>
+<string name="msg_add_or_edit_top">Add or edit topics you follow.
+Choose three or more.</string>
+<string name="msg_lorem_ipsum_dol3">Lorem Ipsum dolor set amet</string>
+<string name="msg_lorem_ipsum_dol2">Lorem Ipsum dolor set amet</string>
+<string name="lbl_app_navigation">App Navigation</string>
+<string name="lbl_3_min_read">3 min read</string>
+<string name="lbl_lorem">Lorem</string>
+<string name="msg_lorem_ipsum_dol7">Lorem Ipsum dolor set amet</string>
+<string name="msg_lorem_ipsum_dol6">Lorem Ipsum dolor set amet</string>
+<string name="msg_lorem_ipsum_dol5">Lorem Ipsum dolor set amet</string>
+<string name="msg_lorem_ipsum_dol4">Lorem Ipsum dolor set amet</string>
+<string name="lbl_art">Art</string>
+<string name="lbl_follow">Follow</string>
+<string name="lbl_programming">Programming</string>
+<string name="lbl_new_story">New Story</string>
+<string name="msg_lorem_ipsum_is5">Lorem Ipsum is
+ a dummy text</string>
+<string name="lbl_humor">Humor</string>
+<string name="msg_lorem_ipsum_is3">Lorem Ipsum is
+ a dummy text</string>
+<string name="msg_lorem_ipsum_is4">Lorem Ipsum is
+ a dummy text</string>
+<string name="msg_what_are_you_in">What are you interested in?</string>
+<string name="lbl_29_july">29 July</string>
+<string name="msg_lorem_ipsum_is2">Lorem Ipsum is
+ a dummy text</string>
+<string name="lbl_business">Business</string>
+<string name="msg_image_credit_l">Image Credit: Lorem Ipsum</string>
+<string name="msg_lorem_ipsum_dol">Lorem Ipsum Dolor</string>
+<string name="lbl_ipsum">Ipsum</string>
+<string name="lbl_gaming">Gaming</string>
+<string name="lbl_top_stories">TOP STORIES</string>
+<string name="lbl_view_profile">View Profile</string>
+<string name="lbl_interests">Interests</string>
+<string name="lbl_film">Film</string>
+<string name="lbl_feminism">Feminism</string>
+<string name="msg_interests_topic">Interests Topics</string>
+<string name="lbl_technology">Technology</string>
+<string name="msg_arts_entertai">ARTS &amp; ENTERTAINMENT</string>
+<string name="lbl_publication">Publication</string>
+<string name="lbl_search">Search</string>
+<string name="lbl_nonfiction">Nonfiction</string>
+<string name="lbl_people">People</string>
+<string name="msg_artificial_inte">Artificial Intelligence</string>
+<string name="lbl_john_doe">John Doe</string>
+<string name="lbl_reading_list">Reading List</string>
+<string name="lbl_logo">LOGO</string>
+<string name="lbl_creativity">Creativity</string>
+<string name="lbl_audio">Audio</string>
+<string name="lbl_psychology">Psychology</string>
+<string name="lbl_health">Health</string>
+<string name="lbl_music">Music</string>
+<string name="msg_john_doe_in_lor">John Doe in Lorem Ipsum</string>
+<string name="lbl_lorem_ipsum">Lorem Ipsum</string>
+<string name="lbl_become_a_member">Become a member</string>
+<string name="lbl_blog">Blog</string>
+<string name="lbl_welcome">Welcome</string>
+<string name="lbl_visual_design">Visual Design</string>
+<string name="lbl_design">Design</string>
+<string name="lbl_following">Following</string>
+<string name="msg_check_your_app">"Check your app's UI from the below demo screens of your app."</string>
+<string name="msg_lorem_ipsum_is">Lorem Ipsum is 
+a dummy text</string>
+<string name="lbl_settings">Settings</string>
+<string name="lbl_education">Education</string>
+<string name="lbl_help">Help</string>
+<string name="lbl_16_days_ago">16 days ago</string>
+<string name="lbl_explore">Explore</string>
+<string name="msg_recommended_for">RECOMMENDED FOR YOU</string>
+<string name="lbl_explore_topics">Explore Topics</string>
+<string name="lbl_comics">Comics</string>
+<string name="lbl_stories">Stories</string>
+<string name="msg_this_contact_has_no_phone_nu">This contact has no phone number</string>
+<string name="lbl_stes">stes</string>
+<string name="lbl_sdfsdf">sdfsdf</string>
+</resources>

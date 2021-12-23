@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="explore1RowModel" type="com.application.app.modules.explore.data.model.Explore1RowModel"/>
+    </data>
+    <LinearLayout android:clickable="true"
+        android:id="@+id/linearGroup44"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerGroup45"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            itemSpace="@{@dimen/_15pxh}" tools:itemCount="2" tools:listitem="@layout/row_explore2"/>
+        <View android:background="@color/gray_400"
+            android:id="@+id/lineDividerLine"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_1pxv"
+            android:layout_marginTop="@dimen/_28pxv" android:layout_width="@dimen/_335pxh"/>
+    </LinearLayout>
+</layout>

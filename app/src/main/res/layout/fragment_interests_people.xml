@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="interestsPeopleVM" type="com.application.app.modules.interestspeople.data.viewmodel.InterestsPeopleVM"/>
+    </data>
+    <androidx.core.widget.NestedScrollView android:clipToPadding="false"
+        android:fillViewport="true" android:id="@+id/scrollViewGroup74"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <LinearLayout android:id="@+id/linearGroup36"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" android:paddingBottom="@dimen/_17pxv">
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtLoremIpsumIs"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_28pxh"
+                android:layout_marginStart="@dimen/_28pxh"
+                android:layout_width="wrap_content"
+                android:text="@{interestsPeopleVM.interestsPeopleModel.txtLoremIpsumIs}"
+                style="@style/txtPoppinssemibold14" tools:text="@string/msg_see_all_people"/>
+            <TextView android:gravity="start"
+                android:id="@+id/txtMorePeopleTo"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_19pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_11pxv"
+                android:paddingStart="@dimen/_28pxh"
+                android:paddingTop="@dimen/_12pxv"
+                android:text="@{interestsPeopleVM.interestsPeopleModel.txtMorePeopleTo}"
+                style="@style/txtSolid" tools:text="@string/msg_more_people_to"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerPeopleList"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:layout_width="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_50pxh}" tools:itemCount="5" tools:listitem="@layout/row_interests_people1"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

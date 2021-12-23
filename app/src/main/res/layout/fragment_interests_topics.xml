@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="interestsTopicsVM" type="com.application.app.modules.intereststopics.data.viewmodel.InterestsTopicsVM"/>
+    </data>
+    <androidx.core.widget.NestedScrollView android:clipToPadding="false"
+        android:fillViewport="true" android:id="@+id/scrollViewGroup73"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <LinearLayout android:id="@+id/linearGroup29"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_59pxv"
+            android:paddingEnd="@dimen/_28pxh" android:paddingStart="@dimen/_28pxh">
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtArtEntertain"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@{interestsTopicsVM.interestsTopicsModel.txtArtEntertain}"
+                style="@style/txtPoppinssemibold14" tools:text="@string/msg_arts_entertai"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerTopicList"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_20pxh}" tools:itemCount="9" tools:listitem="@layout/row_interests_topics1"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

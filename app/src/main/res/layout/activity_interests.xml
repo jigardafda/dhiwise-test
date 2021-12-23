@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="interestsVM" type="com.application.app.modules.interests.data.viewmodel.InterestsVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearGroup62"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarGroup61"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_22pxv"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearGroup60"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageLeftIcon"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_24pxh"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_width="@dimen/_24pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_left_icon"/>
+                <TextView android:gravity="center"
+                    android:id="@+id/txtWelcome"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_147pxh"
+                    android:layout_marginStart="@dimen/_113pxh"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:text="@{interestsVM.interestsModel.txtWelcome}"
+                    style="@style/txtPoppinssemibold16_1" tools:text="@string/lbl_welcome"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true"
+            android:id="@+id/scrollViewGroup63"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="match_parent"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linearGroup59"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" android:paddingTop="@dimen/_28pxv">
+                <TextView android:gravity="center"
+                    android:id="@+id/txtTitleText"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_19pxh"
+                    android:layout_marginStart="@dimen/_19pxh"
+                    android:layout_width="match_parent"
+                    android:text="@{interestsVM.interestsModel.txtTitleText}"
+                    style="@style/txtPoppinsbold20" tools:text="@string/msg_what_are_you_in"/>
+                <TextView android:gravity="top|center"
+                    android:id="@+id/txtDescriptionTes"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_58pxh"
+                    android:layout_marginStart="@dimen/_58pxh"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_width="wrap_content"
+                    android:text="@{interestsVM.interestsModel.txtDescriptionTes}"
+                    style="@style/txtPoppinsregular16" tools:text="@string/msg_add_or_edit_top"/>
+                <LinearLayout android:id="@+id/linearIntrestRow1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnArt"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginStart="@dimen/_41pxh"
+                        android:layout_width="@dimen/_51pxh"
+                        android:text="@string/lbl_art"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_art"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnCryptocurrency"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_weight="1.2"
+                        android:layout_width="0dp"
+                        android:text="@string/lbl_cryptocurrency"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_cryptocurrency"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnScience"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginEnd="@dimen/_42pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_width="@dimen/_83pxh"
+                        android:text="@string/lbl_science"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_2" tools:text="@string/lbl_science"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearIntrestRow2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnLoremIpsum"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginStart="@dimen/_43pxh"
+                        android:layout_width="@dimen/_120pxh"
+                        android:text="@string/lbl_lorem_ipsum"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_lorem_ipsum"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnLorem"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_width="@dimen/_74pxh"
+                        android:text="@string/lbl_lorem"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_lorem"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnIpsum"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginEnd="@dimen/_44pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_width="@dimen/_74pxh"
+                        android:text="@string/lbl_ipsum"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_ipsum"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearIntrestRow3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnTechnology"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginStart="@dimen/_37pxh"
+                        android:layout_width="@dimen/_109pxh"
+                        android:text="@string/lbl_technology"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded_2" tools:text="@string/lbl_technology"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnProgramming"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_width="@dimen/_121pxh"
+                        android:text="@string/lbl_programming"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded_2" tools:text="@string/lbl_programming"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnArt1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginEnd="@dimen/_37pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_width="@dimen/_51pxh"
+                        android:text="@string/lbl_art"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_art"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearIntrestRow4"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnArt2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginStart="@dimen/_41pxh"
+                        android:layout_width="@dimen/_51pxh"
+                        android:text="@string/lbl_art"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_art"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnCryptocurrency1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_weight="1.2"
+                        android:layout_width="0dp"
+                        android:text="@string/lbl_cryptocurrency"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_cryptocurrency"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnScience1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginEnd="@dimen/_42pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_width="@dimen/_83pxh"
+                        android:text="@string/lbl_science"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_2" tools:text="@string/lbl_science"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearIntrestRow5"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnLoremIpsum1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginStart="@dimen/_43pxh"
+                        android:layout_width="@dimen/_120pxh"
+                        android:text="@string/lbl_lorem_ipsum"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_lorem_ipsum"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnLorem1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_width="@dimen/_74pxh"
+                        android:text="@string/lbl_lorem"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded_2" tools:text="@string/lbl_lorem"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnIpsum1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginEnd="@dimen/_44pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_width="@dimen/_74pxh"
+                        android:text="@string/lbl_ipsum"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_ipsum"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearIntrestRow6"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnTechnology1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginStart="@dimen/_37pxh"
+                        android:layout_width="@dimen/_109pxh"
+                        android:text="@string/lbl_technology"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_technology"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnProgramming1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_width="@dimen/_121pxh"
+                        android:text="@string/lbl_programming"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_programming"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnArt3"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginEnd="@dimen/_37pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_width="@dimen/_51pxh"
+                        android:text="@string/lbl_art"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_art"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearIntrestRow7"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnArt4"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginStart="@dimen/_41pxh"
+                        android:layout_width="@dimen/_51pxh"
+                        android:text="@string/lbl_art"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_art"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnCryptocurrency2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_weight="1.2"
+                        android:layout_width="0dp"
+                        android:text="@string/lbl_cryptocurrency"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_cryptocurrency"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnScience2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginEnd="@dimen/_42pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_width="@dimen/_83pxh"
+                        android:text="@string/lbl_science"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_2" tools:text="@string/lbl_science"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearIntrestRow8"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnLoremIpsum2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginStart="@dimen/_43pxh"
+                        android:layout_width="@dimen/_120pxh"
+                        android:text="@string/lbl_lorem_ipsum"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_lorem_ipsum"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnLorem2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_width="@dimen/_74pxh"
+                        android:text="@string/lbl_lorem"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_lorem"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnIpsum2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginEnd="@dimen/_44pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_width="@dimen/_74pxh"
+                        android:text="@string/lbl_ipsum"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_ipsum"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearIntrestRow9"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnTechnology2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginStart="@dimen/_37pxh"
+                        android:layout_width="@dimen/_109pxh"
+                        android:text="@string/lbl_technology"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_technology"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnProgramming2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_width="@dimen/_121pxh"
+                        android:text="@string/lbl_programming"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_programming"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnArt5"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_40pxv"
+                        android:layout_marginEnd="@dimen/_37pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_width="@dimen/_51pxh"
+                        android:text="@string/lbl_art"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_art"/>
+                </LinearLayout>
+                <FrameLayout android:id="@+id/frameBottomSection"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:gravity="center"
+                        android:id="@+id/btnGroup10"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_37pxv"
+                        android:layout_marginEnd="@dimen/_32pxh"
+                        android:layout_marginStart="@dimen/_32pxh"
+                        android:layout_marginTop="@dimen/_15pxv"
+                        android:layout_width="match_parent"
+                        android:text="@string/lbl_next"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded_3" tools:text="@string/lbl_next"/>
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

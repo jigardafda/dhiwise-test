@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="interestsTopics2VM" type="com.application.app.modules.intereststopics2.data.viewmodel.InterestsTopics2VM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearGroup77"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarGroup28"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_28pxv"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearGroup27"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageDrawerIcon"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_20pxh"
+                    android:layout_marginBottom="@dimen/_8pxv"
+                    android:layout_marginStart="@dimen/_28pxh"
+                    android:layout_marginTop="@dimen/_8pxv"
+                    android:layout_width="@dimen/_19pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_drawer_icon"/>
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtCategory"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_22pxh"
+                    android:layout_weight="1.2"
+                    android:layout_width="0dp"
+                    android:text="@{interestsTopics2VM.interestsTopics2Model.txtCategory}"
+                    style="@style/txtPoppinssemibold24" tools:text="@string/lbl_interests"/>
+                <ImageView android:id="@+id/imageNotificationIc"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_21pxh"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_marginStart="@dimen/_110pxh"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_width="@dimen/_20pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_icon_notificati"/>
+                <ImageView android:id="@+id/imageSearchIcon"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_20pxh"
+                    android:layout_marginBottom="@dimen/_8pxv"
+                    android:layout_marginEnd="@dimen/_28pxh"
+                    android:layout_marginStart="@dimen/_20pxh"
+                    android:layout_marginTop="@dimen/_8pxv"
+                    android:layout_width="@dimen/_20pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_search_icon"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true"
+            android:id="@+id/scrollViewGroup32"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="match_parent"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linearGroup26"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" android:paddingTop="@dimen/_27pxv">
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayoutGroup4"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    app:tabIndicatorColor="@color/light_blue_A200"
+                    app:tabIndicatorHeight="@dimen/_4pxv"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="@color/black_900" app:tabTextColor="@color/black_900"/>
+                <View android:background="@color/gray_400"
+                    android:id="@+id/lineLine2"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_1pxv" android:layout_width="@dimen/_375pxh"/>
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPagerGroup30"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_24pxv"
+                    android:layout_weight="1" android:layout_width="match_parent"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
